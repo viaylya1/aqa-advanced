@@ -9,19 +9,19 @@ console.log(typeof integerNumber, typeof fractionalNumber, typeof PI);
 
 // String
 const firstName = "Vika";
-let lastName = "Bryzhak";
+const lastName = "Bryzhak";
 console.log(firstName, typeof firstName);
 console.log(lastName, typeof lastName);
 
 // Boolean
-let isMarried = false;
-let hasCar = true;
+const isMarried = false;
+const hasCar = true;
 console.log(isMarried, hasCar);
 console.log(typeof isMarried, typeof hasCar);
 
 // Undefined
-let _unknown;
-let $unknown = undefined;
+const _unknown;
+const $unknown = undefined;
 console.log(_unknown, $unknown);
 console.log(typeof _unknown, typeof $unknown);
 
@@ -36,7 +36,7 @@ if (noValue === null) {
 }
 
 // BigInt
-let big_Number = BigInt(123456789012345678901211112234445555555554567890);
+const big_Number = BigInt(123456789012345678901211112234445555555554567890);
 console.log(big_Number);
 console.log(typeof big_Number);
 
