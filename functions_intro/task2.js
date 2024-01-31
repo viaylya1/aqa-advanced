@@ -1,5 +1,5 @@
 function isAdult(age) {
-  return Boolean(age >= 18);
+  return age >= 18;
 }
 
 console.log(`The person 1 is "${isAdult(25)}" adult`);
