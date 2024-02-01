@@ -20,7 +20,7 @@ console.log(isMarried, hasCar);
 console.log(typeof isMarried, typeof hasCar);
 
 // Undefined
-const _unknown;
+let _unknown;
 const $unknown = undefined;
 console.log(_unknown, $unknown);
 console.log(typeof _unknown, typeof $unknown);
