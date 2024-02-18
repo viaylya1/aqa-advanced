@@ -25,7 +25,7 @@ export default class EBook extends Book {
       console.log(`Error: File Format is unknown`);
       return;
     }
-    if (value !== "pdf" && value !== "fb2" && value !== "EPUB") {
+    if (!["pdf", "fb2", "EPUB"].includes(value)) {
       console.log(`Error: "${value}" is unsupported File Format`);
       return;
     }
