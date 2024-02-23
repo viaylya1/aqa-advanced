@@ -1,20 +1,21 @@
+/* eslint-disable no-restricted-syntax */
 // For...of for Objects array. Destructuring in a cycle.
 
 const users = [
   {
-    firstName: "Ted",
-    lastName: "Novan",
+    firstName: 'Ted',
+    lastName: 'Novan',
     age: 23,
     isMarried: false,
-    courses: ["Math", "History", "Programming"],
+    courses: ['Math', 'History', 'Programming']
   },
   {
-    firstName: "Nick",
-    lastName: "Grant",
+    firstName: 'Nick',
+    lastName: 'Grant',
     age: 28,
     isMarried: true,
-    courses: ["Designer", "Doctor"],
-  },
+    courses: ['Designer', 'Doctor']
+  }
 ];
 
 for (const usersList of users) {

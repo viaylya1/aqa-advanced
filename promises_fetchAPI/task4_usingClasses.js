@@ -1,5 +1,5 @@
-import ToDoController from "./ToDoController.js";
-import UserController from "./UserController.js";
+import ToDoController from './ToDoController.js';
+import UserController from './UserController.js';
 
 const toDoController = new ToDoController();
 toDoController.fetchToDo().then((values) => console.log(values));

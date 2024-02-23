@@ -6,9 +6,7 @@ export default class Book {
   }
 
   printinfo() {
-    console.log(
-      `Book name: ${this._title}, Author: ${this._author}, Year of publication: ${this._publicationYear}`
-    );
+    console.log(`Book name: ${this._title}, Author: ${this._author}, Year of publication: ${this._publicationYear}`);
   }
 
   get title() {
@@ -17,11 +15,11 @@ export default class Book {
 
   set title(value) {
     if (value.length > 50) {
-      console.log(`Error: "Maximum number of letters in the title is 50"`);
+      console.log('Error: "Maximum number of letters in the title is 50"');
       return;
     }
     if (!/^[A-Za-z\s]+$/.test(value)) {
-      console.log(`Error: "Title must be in EN letters"`);
+      console.log('Error: "Title must be in EN letters"');
       return;
     }
     this._title = value;
@@ -32,12 +30,12 @@ export default class Book {
   }
 
   set author(value) {
-    if (typeof value === "string" && value.includes("Ted Ted")) {
-      console.log(`Error: "Ted Ted" is a forbidden author`);
+    if (typeof value === 'string' && value.includes('Ted Ted')) {
+      console.log('Error: "Ted Ted" is a forbidden author');
       return;
     }
-    if (typeof value !== "string") {
-      console.log(`Error: "Author must be a string"`);
+    if (typeof value !== 'string') {
+      console.log('Error: "Author must be a string"');
       return;
     }
     this._author = value;
@@ -49,11 +47,12 @@ export default class Book {
 
   set publicationYear(value) {
     if (value <= 1900) {
-      console.log(`Error: "Year of publication must be 1900 or later"`);
+      console.log('Error: "Year of publication must be 1900 or later"');
       return;
     }
-    if (typeof value !== "number" || isNaN(value)) {
-      console.log(`Error: "Year of publication must be a number"`);
+    // eslint-disable-next-line no-restricted-globals
+    if (typeof value !== 'number' || isNaN(value)) {
+      console.log('Error: "Year of publication must be a number"');
       return;
     }
     this._publicationYear = value;
@@ -61,9 +60,7 @@ export default class Book {
 
   // Static method Option 1
   static findOldestBook(books) {
-    const oldestBook = books.sort(
-      (a, b) => a.publicationYear - b.publicationYear
-    );
+    const oldestBook = books.sort((a, b) => a.publicationYear - b.publicationYear);
     return oldestBook[0];
   }
 
@@ -75,7 +72,7 @@ export default class Book {
   //   return oldestBook;
   // }
 
-  //Static Method Option 3
+  // Static Method Option 3
   // static findOldestBook(books) {
   //   let oldestYear = Infinity;
   //   let oldestBook;
