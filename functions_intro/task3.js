@@ -1,11 +1,13 @@
+/* eslint-disable default-case */
+// eslint-disable-next-line consistent-return
 function checkOrder(available, ordered) {
   switch (true) {
     case available < ordered:
       return "Your order is too large, we don't have enough goods";
     case ordered === 0:
-      return "Your order is empty";
+      return 'Your order is empty';
     case available >= ordered:
-      return "Your order is accepted";
+      return 'Your order is accepted';
   }
 }
 

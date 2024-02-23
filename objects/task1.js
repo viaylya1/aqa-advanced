@@ -2,9 +2,9 @@
 
 const student = {};
 
-student.firstName = "Ted";
-student.lastName = "Novan";
+student.firstName = 'Ted';
+student.lastName = 'Novan';
 student.age = 23;
-student.courses = ["Math", "History", "Programming"];
+student.courses = ['Math', 'History', 'Programming'];
 
 console.log(student);

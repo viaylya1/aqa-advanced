@@ -1,4 +1,4 @@
-import Book from "./Book.js";
+import Book from './Book.js';
 
 export default class EBook extends Book {
   constructor(title, author, publicationYear, fileFormat) {
@@ -22,10 +22,10 @@ export default class EBook extends Book {
 
   set fileFormat(value) {
     if (value === undefined || value === null) {
-      console.log(`Error: File Format is unknown`);
+      console.log('Error: File Format is unknown');
       return;
     }
-    if (!["pdf", "fb2", "EPUB"].includes(value)) {
+    if (!['pdf', 'fb2', 'EPUB'].includes(value)) {
       console.log(`Error: "${value}" is unsupported File Format`);
       return;
     }

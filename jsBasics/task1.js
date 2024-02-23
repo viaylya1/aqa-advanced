@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 // Declaring variables for primitive types
 
 // Number
@@ -8,8 +9,8 @@ console.log(integerNumber, fractionalNumber, PI);
 console.log(typeof integerNumber, typeof fractionalNumber, typeof PI);
 
 // String
-const firstName = "Vika";
-const lastName = "Bryzhak";
+const firstName = 'Vika';
+const lastName = 'Bryzhak';
 console.log(firstName, typeof firstName);
 console.log(lastName, typeof lastName);
 
@@ -25,22 +26,23 @@ const $unknown = undefined;
 console.log(_unknown, $unknown);
 console.log(typeof _unknown, typeof $unknown);
 
-//NULL
+// NULL
 const noValue = null;
 console.log(noValue);
 
 if (noValue === null) {
-  console.log("noValue is null");
+  console.log('noValue is null');
 } else {
-  console.log("noValue is not null");
+  console.log('noValue is not null');
 }
 
 // BigInt
+// eslint-disable-next-line no-loss-of-precision
 const big_Number = BigInt(123456789012345678901211112234445555555554567890);
 console.log(big_Number);
 console.log(typeof big_Number);
 
 // Symbol
-const uniqueValue = Symbol("id");
+const uniqueValue = Symbol('id');
 console.log(uniqueValue);
 console.log(typeof uniqueValue);
