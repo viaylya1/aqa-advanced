@@ -1,0 +1,14 @@
+1) Select the first <h2> element:
+Option1: h2:first-of-type
+Option2: h2:nth-of-type(1)
+
+2) Select all list items under the <ul> element with the id "fruits":
+Option1: ul#fruits li
+Option2: ul#fruits > li
+
+3) Select the second <span> element with the class "color" under the <div> with the id "colors":
+div#colors span.color:nth-child(2)
+
+4) Select the cell with age of the student named "Alice":
+Option1: table#students tr:nth-child(3) td:nth-child(2)
+Option2:table#students tr:last-child td:last-child
